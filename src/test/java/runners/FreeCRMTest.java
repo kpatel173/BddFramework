@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"/Users/krupalpatel/Desktop/Workspace2/FreeCRMProject/src/test/java/features"}, //path of feature file
+		features = {"/Users/krupalpatel/Desktop/Workspace2/FreeCRM_BDD_Project/src/test/java/features"}, //path of feature file
 		glue= {"stepDefinations"}, // the path of the stepdefination file
 		//plugin = {"pretty"},
 		format = {"pretty", "html:target/cucumber-reports/FreeCRM-pretty", "json:target/cucumber-reports/FreeCRMReport.json", "junit:target/cucumber-reports/FreeCRM.xml"},

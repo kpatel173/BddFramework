@@ -21,6 +21,7 @@ public class LoginSteps extends BaseClass{
 			 BaseClass.initialization();
 			 lp = new LoginPage();
 			 lp.openPage();
+			
 		}
 
 		@When("^page title is \"([^\"]*)\"$")
@@ -36,6 +37,7 @@ public class LoginSteps extends BaseClass{
 		@Then("^user enters valid \"([^\"]*)\" and \"([^\"]*)\"$")
 		public void user_enters_valid_and(String email, String pass) throws Throwable {
 		    lp.enterEmail_Pass(email, pass);
+		    
 			
 			
 		}

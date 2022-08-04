@@ -1,4 +1,132 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("freecrm.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("deals.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Deal data creation",
+  "description": "",
+  "id": "deal-data-creation",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Free CRM Create a new deal scenario",
+  "description": "",
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Login Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "title of login page is Cogmento CRM",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters username and password",
+  "rows": [
+    {
+      "cells": [
+        "naveenk",
+        "test@123"
+      ],
+      "line": 8
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user clicks on the login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "user enters deal details",
+  "rows": [
+    {
+      "cells": [
+        "test deal",
+        "1000",
+        "50",
+        "10"
+      ],
+      "line": 14
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Deals.user_is_already_on_Login_Page()"
+});
+formatter.result({
+  "duration": 7367963010,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Deals.title_of_login_page_is_Cogmento_CRM()"
+});
+formatter.result({
+  "duration": 12224980,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Deals.user_enters_username_and_password(DataTable)"
+});
+formatter.result({
+  "duration": 20060204894,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name\u003d\u0027username\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027krupals-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:40:aec7:e058:b083%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 17.7.0, moz:processID: 16357, moz:profile: /var/folders/p8/fwvt8hpx36d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f86b55c0-52c4-4323-b393-dd94b8e5a6d3\n*** Element info: {Using\u003dname, value\u003dusername}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepDefinations.Deals.user_enters_username_and_password(Deals.java:37)\n\tat ✽.Then user enters username and password(deals.feature:7)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "Deals.user_clicks_on_the_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Deals.user_is_on_hopme_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Deals.user_moves_to_new_deal_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Deals.user_enters_deal_details(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Deals.close_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("freecrm.feature");
 formatter.feature({
   "comments": [
     {
@@ -64,9 +192,8 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 5386232509,
-  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 100\nCurrent browser version is 102.0.5005.115 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027krupals-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:40:aec7:e058:b083%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: 0   chromedriver                        0x00000001023f13d9 chromedriver + 5104601\n1   chromedriver                        0x0000000102381bf3 chromedriver + 4647923\n2   chromedriver                        0x0000000101f72b48 chromedriver + 392008\n3   chromedriver                        0x0000000101f98e1e chromedriver + 548382\n4   chromedriver                        0x0000000101f9490a chromedriver + 530698\n5   chromedriver                        0x0000000101f90f86 chromedriver + 515974\n6   chromedriver                        0x0000000101fcb3a0 chromedriver + 754592\n7   chromedriver                        0x0000000101fc55b3 chromedriver + 730547\n8   chromedriver                        0x0000000101f9b139 chromedriver + 557369\n9   chromedriver                        0x0000000101f9c165 chromedriver + 561509\n10  chromedriver                        0x00000001023b039d chromedriver + 4838301\n11  chromedriver                        0x00000001023c8cde chromedriver + 4938974\n12  chromedriver                        0x00000001023cdb5e chromedriver + 4959070\n13  chromedriver                        0x00000001023c994a chromedriver + 4942154\n14  chromedriver                        0x00000001023a533c chromedriver + 4793148\n15  chromedriver                        0x00000001023e33b8 chromedriver + 5047224\n16  chromedriver                        0x00000001023e353f chromedriver + 5047615\n17  chromedriver                        0x00000001023f8705 chromedriver + 5134085\n18  libsystem_pthread.dylib             0x00007fff66b85661 _pthread_body + 340\n19  libsystem_pthread.dylib             0x00007fff66b8550d _pthread_body + 0\n20  libsystem_pthread.dylib             0x00007fff66b84bf9 thread_start + 13\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat testBase.BaseClass.initialization(BaseClass.java:38)\n\tat stepDefinations.LoginSteps.user_is_on_login_page(LoginSteps.java:21)\n\tat ✽.Given User is on login page(freecrm.feature:10)\n",
-  "status": "failed"
+  "duration": 6902209490,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -78,7 +205,8 @@ formatter.match({
   "location": "LoginSteps.page_title_is(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14113028,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -94,25 +222,29 @@ formatter.match({
   "location": "LoginSteps.user_enters_valid_and(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 181517403,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 246924471,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.verify_user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 775040862,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_quit()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 971009268,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 19,
@@ -243,9 +375,8 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 1736256984,
-  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 100\nCurrent browser version is 102.0.5005.115 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027krupals-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:40:aec7:e058:b083%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: 0   chromedriver                        0x0000000107e053d9 chromedriver + 5104601\n1   chromedriver                        0x0000000107d95bf3 chromedriver + 4647923\n2   chromedriver                        0x0000000107986b48 chromedriver + 392008\n3   chromedriver                        0x00000001079ace1e chromedriver + 548382\n4   chromedriver                        0x00000001079a890a chromedriver + 530698\n5   chromedriver                        0x00000001079a4f86 chromedriver + 515974\n6   chromedriver                        0x00000001079df3a0 chromedriver + 754592\n7   chromedriver                        0x00000001079d95b3 chromedriver + 730547\n8   chromedriver                        0x00000001079af139 chromedriver + 557369\n9   chromedriver                        0x00000001079b0165 chromedriver + 561509\n10  chromedriver                        0x0000000107dc439d chromedriver + 4838301\n11  chromedriver                        0x0000000107ddccde chromedriver + 4938974\n12  chromedriver                        0x0000000107de1b5e chromedriver + 4959070\n13  chromedriver                        0x0000000107ddd94a chromedriver + 4942154\n14  chromedriver                        0x0000000107db933c chromedriver + 4793148\n15  chromedriver                        0x0000000107df73b8 chromedriver + 5047224\n16  chromedriver                        0x0000000107df753f chromedriver + 5047615\n17  chromedriver                        0x0000000107e0c705 chromedriver + 5134085\n18  libsystem_pthread.dylib             0x00007fff66b85661 _pthread_body + 340\n19  libsystem_pthread.dylib             0x00007fff66b8550d _pthread_body + 0\n20  libsystem_pthread.dylib             0x00007fff66b84bf9 thread_start + 13\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat testBase.BaseClass.initialization(BaseClass.java:38)\n\tat stepDefinations.LoginSteps.user_is_on_login_page(LoginSteps.java:21)\n\tat ✽.Given User is on login page(freecrm.feature:20)\n",
-  "status": "failed"
+  "duration": 6725294994,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -257,7 +388,8 @@ formatter.match({
   "location": "LoginSteps.page_title_is(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12931802,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -273,25 +405,29 @@ formatter.match({
   "location": "LoginSteps.user_enters_invalid_and(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 165332119,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 239569308,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.verify_Error_Message()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 463417708,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_quit()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1248107597,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 30,
@@ -345,9 +481,8 @@ formatter.match({
   "location": "LoginSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 2089262291,
-  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 100\nCurrent browser version is 102.0.5005.115 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027krupals-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:40:aec7:e058:b083%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: 0   chromedriver                        0x000000010ee2c3d9 chromedriver + 5104601\n1   chromedriver                        0x000000010edbcbf3 chromedriver + 4647923\n2   chromedriver                        0x000000010e9adb48 chromedriver + 392008\n3   chromedriver                        0x000000010e9d3e1e chromedriver + 548382\n4   chromedriver                        0x000000010e9cf90a chromedriver + 530698\n5   chromedriver                        0x000000010e9cbf86 chromedriver + 515974\n6   chromedriver                        0x000000010ea063a0 chromedriver + 754592\n7   chromedriver                        0x000000010ea005b3 chromedriver + 730547\n8   chromedriver                        0x000000010e9d6139 chromedriver + 557369\n9   chromedriver                        0x000000010e9d7165 chromedriver + 561509\n10  chromedriver                        0x000000010edeb39d chromedriver + 4838301\n11  chromedriver                        0x000000010ee03cde chromedriver + 4938974\n12  chromedriver                        0x000000010ee08b5e chromedriver + 4959070\n13  chromedriver                        0x000000010ee0494a chromedriver + 4942154\n14  chromedriver                        0x000000010ede033c chromedriver + 4793148\n15  chromedriver                        0x000000010ee1e3b8 chromedriver + 5047224\n16  chromedriver                        0x000000010ee1e53f chromedriver + 5047615\n17  chromedriver                        0x000000010ee33705 chromedriver + 5134085\n18  libsystem_pthread.dylib             0x00007fff66b85661 _pthread_body + 340\n19  libsystem_pthread.dylib             0x00007fff66b8550d _pthread_body + 0\n20  libsystem_pthread.dylib             0x00007fff66b84bf9 thread_start + 13\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat testBase.BaseClass.initialization(BaseClass.java:38)\n\tat stepDefinations.LoginSteps.user_is_on_login_page(LoginSteps.java:21)\n\tat ✽.Given User is on login page(freecrm.feature:20)\n",
-  "status": "failed"
+  "duration": 6809509534,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -359,7 +494,8 @@ formatter.match({
   "location": "LoginSteps.page_title_is(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3769905,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -375,24 +511,124 @@ formatter.match({
   "location": "LoginSteps.user_enters_invalid_and(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 158937627,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 236121720,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.verify_Error_Message()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 239497571,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_quit()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 930028443,
+  "status": "passed"
+});
+formatter.uri("hooks.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Free CRM application test",
+  "description": "",
+  "id": "free-crm-application-test",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "free crm create deal test",
+  "description": "",
+  "id": "free-crm-application-test;free-crm-create-deal-test",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "user is on deal page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "user fills the deals form",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 6,
+  "name": "deal is created",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Hooks.user_is_on_deal_page()"
+});
+formatter.result({
+  "duration": 3485391311,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Hooks.user_fills_the_deals_form()"
+});
+formatter.result({
+  "duration": 20488,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Hooks.deal_is_created()"
+});
+formatter.result({
+  "duration": 16086,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "free crm create contact test",
+  "description": "",
+  "id": "free-crm-application-test;free-crm-create-contact-test",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 10,
+  "name": "user is on contact page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 11,
+  "name": "user fills the contact form",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "contact is created",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Hooks.user_is_on_contact_page()"
+});
+formatter.result({
+  "duration": 50334,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Hooks.user_fills_the_contact_form()"
+});
+formatter.result({
+  "duration": 32581,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Hooks.contact_is_created()"
+});
+formatter.result({
+  "duration": 44455,
+  "status": "passed"
 });
 });

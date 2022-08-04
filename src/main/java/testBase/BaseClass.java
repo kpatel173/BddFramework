@@ -21,7 +21,7 @@ public class BaseClass {
 		
 		try {
 			
-			FileInputStream f = new FileInputStream("/Users/krupalpatel/Desktop/Workspace2/FreeCRMProject/src/main/java/testBase/Configuration.properties");
+			FileInputStream f = new FileInputStream("/Users/krupalpatel/Desktop/Workspace2/FreeCRM_BDD_Project/src/main/java/testBase/Configuration.properties");
 			prop.load(f);
 		} catch (IOException e) {
 			
